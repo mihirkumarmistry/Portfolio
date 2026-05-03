@@ -1,4 +1,3 @@
-import { GraduationCap, Calendar, MapPin, Award } from "lucide-react";
 import {
   Card,
   CardContent,
@@ -6,6 +5,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { Calendar, GraduationCap } from "lucide-react";
 
 const education = [
   {
@@ -30,19 +30,13 @@ const education = [
   }
 ];
 
-const certifications = [
-  "System Administration by Microsoft",
-  "AWS Certified Machine Learning",
-  "Google Cloud Professional Machine Learning Engineer",
-];
-
 export function Education() {
   return (
     <section id="education" className="section-padding bg-gray-800/30">
       <div className="container-custom">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            Education & <span className="gradient-text">Certifications</span>
+            <span className="gradient-text">Education</span>
           </h2>
           <div className="w-20 h-1 bg-teal-400 mx-auto rounded-full" />
           <p className="text-xl text-gray-300 mt-6 max-w-3xl mx-auto">
@@ -53,14 +47,11 @@ export function Education() {
         <div className="max-w-6xl mx-auto">
           {/* Education */}
           <div className="mb-16">
-            <h3 className="text-2xl font-bold text-teal-400 mb-8 text-center">
-              Academic Background
-            </h3>
             <div className="grid gap-6">
               {education.map((edu, index) => (
                 <Card key={index} className="group card-hover">
                   <CardHeader>
-                    <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
+                    <div className="flex flex-col lg:flex-row lg:justify-between gap-4">
                       <div className="flex items-start space-x-4">
                         <div className="flex-shrink-0 w-12 h-12 bg-teal-400/10 rounded-xl flex items-center justify-center">
                           <GraduationCap size={24} className="text-teal-400" />
@@ -77,12 +68,12 @@ export function Education() {
                           </p>
                         </div>
                       </div>
-                      <div className="flex flex-col lg:items-end gap-2">
+                      <div className="flex items-start">
                         <div className="flex items-center text-sm text-gray-400">
                           <Calendar size={16} className="mr-2" />
                           {edu.period}
                         </div>
-                        <div className="flex items-center text-sm text-gray-400">
+                        {/* <div className="flex items-center text-sm text-gray-400">
                           <MapPin size={16} className="mr-2" />
                           {edu.location}
                         </div>
@@ -94,7 +85,7 @@ export function Education() {
                           }`}
                         >
                           {edu.status}
-                        </span>
+                        </span> */}
                       </div>
                     </div>
                   </CardHeader>
@@ -106,33 +97,6 @@ export function Education() {
                 </Card>
               ))}
             </div>
-          </div>
-
-          {/* Certifications */}
-          <div>
-            <h3 className="text-2xl font-bold text-teal-400 mb-8 text-center">
-              Certifications & Courses
-            </h3>
-            <Card className="group card-hover">
-              <CardContent className="p-8">
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                  {certifications.map((cert, index) => (
-                    <div
-                      key={index}
-                      className="flex items-center p-3 bg-gray-800/50 rounded-lg border border-gray-700 hover:border-teal-400/50 transition-all duration-300 hover:bg-teal-400/5"
-                    >
-                      <Award
-                        size={16}
-                        className="text-teal-400 mr-3 flex-shrink-0"
-                      />
-                      <span className="text-sm text-gray-300 font-medium">
-                        {cert}
-                      </span>
-                    </div>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </div>

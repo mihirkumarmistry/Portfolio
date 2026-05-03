@@ -115,14 +115,13 @@ export function Hero() {
 
             <div className="space-y-6">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
-                Hi! I'm <span className="gradient-text">Mihirkumar Mistry</span>.
+                Hi! I'm <span className="gradient-text">Mihirkumar Mistry</span>
               </h1>
 
               <div className="text-xl sm:text-2xl lg:text-3xl text-gray-300 min-h-[2.5rem] lg:min-h-[3rem]">
                 A{" "}
                 <span className="text-teal-400 font-medium">
-                  {currentText}
-                  <span className="animate-pulse">|</span>
+                  Full-Stack Software Engineer.
                 </span>
               </div>
 
@@ -131,9 +130,9 @@ export function Hero() {
                 backends, and measurable outcomes."
               </p>
 
-              <p className="text-base sm:text-lg text-gray-500 flex items-center justify-center gap-2">
+              {/* <p className="text-base sm:text-lg text-gray-500 flex items-center justify-center gap-2">
                 <span>📍</span> Ontario, Canada
-              </p>
+              </p> */}
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

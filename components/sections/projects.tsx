@@ -8,14 +8,9 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import {
-  ArrowRight,
-  Brain,
-  Building,
-  Hospital,
-  Server
+  ArrowRight
 } from "lucide-react";
 import Link from "next/link";
-import { FaGithub as Github } from "react-icons/fa6";
 
 const platforms = [
   {
@@ -121,11 +116,11 @@ const platforms = [
 
 export function Projects() {
   return (
-    <section id="projects" className="section-padding">
+    <section id="projects" className="section-padding bg-gray-800/30">
       <div className="container-custom">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            Code <span className="gradient-text">Repositories</span>
+            <span className="gradient-text">Projects</span>
           </h2>
           <div className="w-20 h-1 bg-teal-400 mx-auto rounded-full mb-8" />
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">

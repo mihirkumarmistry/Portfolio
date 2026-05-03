@@ -87,13 +87,13 @@ export function Experience() {
                       <Calendar size={16} className="mr-2" />
                       {exp.period}
                     </div>
-                    <div className="flex items-center text-sm text-gray-400">
+                    {/* <div className="flex items-center text-sm text-gray-400">
                       <MapPin size={16} className="mr-2" />
                       {exp.location}
                     </div>
                     <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-teal-400/10 text-teal-400 border border-teal-400/20">
                       {exp.type}
-                    </span>
+                    </span> */}
                   </div>
                 </div>
               </CardHeader>

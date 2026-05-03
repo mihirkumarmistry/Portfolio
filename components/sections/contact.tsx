@@ -31,20 +31,20 @@ const contactMethods = [
     href: "https://linkedin.com/in/mihirkumar-mistry",
     buttonText: "View Profile",
     color: "text-blue-500",
-  },
+  },  
   {
-    title: "GitHub",
-    description: "Explore all my projects",
-    icon: Github,
-    href: "https://github.com/mihirkumarmistry",
-    buttonText: "Visit GitHub",
+    title: "WhatsApp",
+    description: "Send text on WhatsApp",
+    icon: FaWhatsapp,
+    href: "https://wa.me/17059925897",
+    buttonText: "Send Text",
     color: "text-blue-400",
   }
 ];
 
 export function Contact() {
   return (
-    <section id="contact" className="section-padding">
+    <section id="contact" className="section-padding bg-gray-800/30">
       <div className="container-custom">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
