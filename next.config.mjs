@@ -4,9 +4,10 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
-    remotePatterns: [{ protocol: "https", hostname: "github.com" }],
+    unoptimized: true,
   },
   transpilePackages: ["geist"],
+  output: 'export',
 };
 
 export default nextConfig;

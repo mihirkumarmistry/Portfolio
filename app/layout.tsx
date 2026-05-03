@@ -92,6 +92,7 @@ export default function RootLayout({
       className={`${GeistSans.variable} ${GeistMono.variable} scroll-smooth`}
     >
       <head>
+        <meta name="google-site-verification" content="MXWZElbGNC6o4rWxWSEtMx-_k_0u8O6DwOeXRq3RZaM" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

@@ -98,7 +98,7 @@ export function Hero() {
               <div className="relative">
                 <div className="w-36 h-36 sm:w-44 sm:h-44 rounded-full ring-4 ring-teal-400/50 ring-offset-4 ring-offset-gray-900 overflow-hidden hover:ring-teal-400 transition-all duration-300">
                   <Image
-                    src="https://github.com/mihirkumarmistry.png"
+                    src="/profile.jpg"
                     alt="Mihirkumar Mistry - Full-Stack Software Engineer, Cloud Developer & AI/ML Engineer"
                     width={176}
                     height={176}
